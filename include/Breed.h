@@ -11,9 +11,7 @@
 namespace Monsters {
     class Breed {
         Breed *m_parent;
-//        std::shared_ptr<Breed> m_parent;
         int m_health;
-//        std::shared_ptr<const char*> m_AttackString;
         const char *m_AttackString;
         const char *m_name= " ";
 
@@ -25,6 +23,7 @@ namespace Monsters {
         auto getHealth() -> int;
         auto getAttack() -> std::shared_ptr<const char>;
         auto newMonster() -> Monsters::Monster *;
+        auto getName() ->std::shared_ptr<const char>;
         auto getParent() -> std::shared_ptr<Breed>;
         auto toString()->std::string ;
         Breed();

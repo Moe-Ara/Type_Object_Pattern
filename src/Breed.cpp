@@ -3,6 +3,7 @@
 //
 
 #include <sstream>
+//#include <string>
 #include "Breed.h"
 using Monsters::Monster;
 using Monsters::Breed;
@@ -13,6 +14,16 @@ auto Breed::getAttack() -> std::shared_ptr<const char> {
     }
     return m_parent->getAttack();
 }
+
+auto Breed::getName() -> std::shared_ptr<const char> {
+    std::string  s;
+    s.compare(" ");
+    if (!((std::string) m_name).compare(" ")|| m_parent == NULL) {
+        return std::make_shared<const char>(*m_name);
+    }
+    return m_parent->getName();
+}
+
 auto Breed::getHealth() -> int {
     if (m_health != 0 || m_parent == NULL) {
         return m_health;
@@ -30,9 +41,7 @@ auto Breed::newMonster() -> Monsters::Monster* {
     return new Monster(*this);
 }
 
-Breed::~Breed() {
 
-}
 
 Monsters::Breed::Breed(Breed* parent, int health, const char* attack):m_AttackString(attack),m_health(health),m_parent(parent) {
 
@@ -48,4 +57,9 @@ auto Breed::toString() -> std::string {
    std::string s;
    ss>>s;
    return (std::string)m_name +": "+"{ "+ "health: "+ s+ ", Attack: "+(std::string)m_AttackString + " }";
+}
+Breed::~Breed() {
+delete m_parent;
+delete m_AttackString;
+delete m_name;
 }
