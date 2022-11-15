@@ -1,1 +1,3 @@
 *.c linguist-detectable=false
+linguist-language=C++
+cJson/* linguist-detectable=false
