@@ -1,30 +1,20 @@
 {
-  "breeds": [
-    {
-      "Troll": {
-        "health": 24,
-        "attack": "Troll Attacking"
-      }
-    },
-    {
-      "Wizard": {
-        "parent": "Troll",
-        "health": 0,
-        "attack": "Wizard Attacking"
-      }
-    },
-    {
-      "Archer": {
-        "parent": "Troll",
-        "health": 20,
-        "attack": "Archer Attacking"
-      }
-    },
-    {
-      "Dragon":{
-        "health": 500,
-        "attack": "Dragon burns you"
-      }
-    }
-  ]
+  "Troll": {
+    "health": 24,
+    "attack": "Troll Attacking"
+  },
+  "Wizard": {
+    "parent": "Troll",
+    "health": 0,
+    "attack": "Wizard Attacking"
+  },
+  "Archer": {
+    "parent": "Troll",
+    "health": 20,
+    "attack": "Archer Attacking"
+  },
+  "Dragon": {
+    "health": 500,
+    "attack": "Dragon burns you"
+  }
 }
