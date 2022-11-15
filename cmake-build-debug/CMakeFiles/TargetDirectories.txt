@@ -1,3 +1,0 @@
-C:/Users/Mohamad/CLionProjects/TypeObject/cmake-build-debug/CMakeFiles/TypeObject.dir
-C:/Users/Mohamad/CLionProjects/TypeObject/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/Mohamad/CLionProjects/TypeObject/cmake-build-debug/CMakeFiles/rebuild_cache.dir
