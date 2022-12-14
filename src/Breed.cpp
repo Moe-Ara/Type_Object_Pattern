@@ -44,11 +44,38 @@ auto Breed::newMonster() -> Monsters::Monster* {
 
 
 Monsters::Breed::Breed(Breed* parent, int health, const char* attack):m_AttackString(attack),m_health(health),m_parent(parent) {
+    /*
+    //TODO: IMPLEMENT THIS
+    if(parent!=NULL)
+    {
+        if(health==0){
+            m_health=parent.getHealth();
+        }
+        if(attack==NULL){
+            m_attack=parent.getAttack();
+        }
+    } */
 
 }
 
 Monsters::Breed::Breed(Breed* parent, int health, const char* attack, const char* name):m_AttackString(attack),m_health(health),m_parent(parent),m_name(name) {
 
+    
+    /*
+    //TODO: IMPLEMENT THIS
+    if(parent!=NULL)
+    {
+        if(health==0){
+            m_health=parent.getHealth();
+        }
+        if(attack==NULL){
+            m_attack=parent.getAttack();
+        }
+        if(((std::string) m_name).compare(" ")){
+            m_name=parent.getName();
+        }
+    } */
+    
 }
 
 auto Breed::toString() -> std::string {
